@@ -1,0 +1,48 @@
+﻿<Window x:Class="T3_Task.Task2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T3_Task"
+        mc:Ignorable="d"
+        Title="Task2" Height="460" Width="420" ResizeMode="NoResize">
+    <Grid>
+
+        <Label Content="Начало дня(Вводить в формате 7:45):" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Line X1="10" Y1="40" X2="400" Y2="40" Stroke="Black"/>
+        <Label Content="Продолжительность урока:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+        <Line X1="10" Y1="70" X2="400" Y2="70" Stroke="Black"/>
+        <Label Content="Длительность обычной перемены:" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+        <Line X1="10" Y1="100" X2="400" Y2="100" Stroke="Black"/>
+        <Label Content="Длительность большой перемены:" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <Line X1="10" Y1="130" X2="400" Y2="130" Stroke="Black"/>
+        <Label Content="После какого урока большая перемена:" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+        <Line X1="10" Y1="160" X2="400" Y2="160" Stroke="Black"/>
+        <Label Content="Сколько уроков всего:" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top"/>
+        <Line X1="10" Y1="190" X2="400" Y2="190" Stroke="Black"/>
+        <TextBox Name="tbxDayBegin" HorizontalAlignment="Left" Height="23" Margin="264,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbxLessonDuration" HorizontalAlignment="Left" Height="23" Margin="264,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbxUsualBreak" HorizontalAlignment="Left" Height="23" Margin="264,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbxBigBreak" HorizontalAlignment="Left" Height="23" Margin="264,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbxWhenBigBreak" HorizontalAlignment="Left" Height="23" Margin="264,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbxHowMuchLessons" HorizontalAlignment="Left" Height="23" Margin="264,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Получить расписание" HorizontalAlignment="Center" Margin="136,195,121,0" VerticalAlignment="Top" Width="138" RenderTransformOrigin="0.304,0.4" Click="Button_Click"/>
+        <Line X1="10" Y1="220" X2="400" Y2="220" Stroke="Black"/>
+        <Label Content="Первый урок" HorizontalAlignment="Left" Margin="10,252,0,0" VerticalAlignment="Top"/>
+        <Label Content="Второй урок" HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top"/>
+        <Label Content="Третий урок" HorizontalAlignment="Left" Margin="10,292,0,0" VerticalAlignment="Top"/>
+        <Label Content="Четвертый урок" HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пятый урок" HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top"/>
+        <Label Content="Шестой урок" HorizontalAlignment="Left" Margin="10,352,0,0" VerticalAlignment="Top"/>
+        <Label Content="Седьмой урок" HorizontalAlignment="Left" Margin="10,372,0,0" VerticalAlignment="Top"/>
+        <Label Content="Восьмой урок" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top"/>
+        <Line X1="110" Y1="255" X2="110" Y2="420" Stroke="Black"/>
+        <Line X1="10" Y1="255" X2="220" Y2="255" Stroke="Black"/>
+        <Label Content="Начало" HorizontalAlignment="Left" Margin="110,230,0,0" VerticalAlignment="Top"/>
+        <Label Content="Конец" HorizontalAlignment="Left" Margin="170,230,0,0" VerticalAlignment="Top"/>
+        <Line X1="165" Y1="255" X2="165" Y2="420" Stroke="Black"/>
+        <Line X1="220" Y1="255" X2="220" Y2="420" Stroke="Black"/>
+        <ListBox HorizontalAlignment="Left" Height="165"  Margin="111,255,0,0" VerticalAlignment="Top" Width="54" Name="lbxScheduleListFirst"/>
+        <ListBox HorizontalAlignment="Left" Height="165"  Margin="166,255,0,0" VerticalAlignment="Top" Width="54" Name="lbxScheduleListSecond"/>
+    </Grid>
+</Window>
